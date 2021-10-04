@@ -1,0 +1,13 @@
+{
+  "logging_level": "info",
+  "kafka_bootstrap_servers": "kafkaboostrap:9092",
+  "sentry_dsn": "",
+  "kafka_group_id": "speedy",
+  "kafka_offset_reset": "latest",
+  "subscribe_topics": ["^topic\\.pattern.+"],
+  "buffer_max_batch_size": 1000,
+  "kafka_polling_goroutines": 10,
+  "kafka_polling_timeout_ms": 30000,
+  "loki_push_url": "http://loki-distributor.loki:3100/loki/api/v1/push",
+  "loki_push_mode": "proto"
+}
