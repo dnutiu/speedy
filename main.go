@@ -73,7 +73,7 @@ func main() {
 	go speedyPusher.RunForever()
 	isRunning := true
 	var waitGroup sync.WaitGroup
-	for i := 0; i < config.KafkaPollingGoroutines; i++ {
+	for i := 0; i < 1; i++ {
 		waitGroup.Add(1)
 		go func() {
 			defer waitGroup.Done()
